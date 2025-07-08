@@ -1,3 +1,7 @@
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+
 const navLinks = [
   {
     name: "Projects",
@@ -283,19 +287,26 @@ const testimonials = [
 const socialImgs = [
   {
     name: "insta",
-    imgPath: "/images/insta.png",
+    // imgPath: "/images/insta.png",
+    icon: InstagramIcon ,
+    pathlink:"https://www.instagram.com/pramodjangra_/"
   },
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
+    name: "mail",
+    // imgPath: "/images/mail.png",
+    icon: AlternateEmailIcon ,
+    pathlink:"mailto:pramodjangra144@gmail.com"
   },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
-  },
+  // {
+  //   name: "x",
+  //   imgPath: "/images/x.png",
+  //   pathlink:
+  // },
   {
     name: "linkedin",
-    imgPath: "/images/linkedin.png",
+    // imgPath: "/images/linkedin.png",
+    icon: LinkedInIcon,
+    pathlink:"https://www.linkedin.com/in/pramod-jangra"
   },
 ];
 

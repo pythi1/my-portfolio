@@ -107,7 +107,7 @@ const Experience = () => {
                         <img className={`md:size-20 size-10 ${card.id === 3 && "size-20"}`} src={card.logoPath} alt="logo" />
                       </div>
                       <div>
-                        <p className={`font-bold text-3xl ${card.id === 1 ?  "text-blue-500 " : card.id === 2 ? " text-green-600" : "text-teal-800" }`} >{card.sidename}</p>
+                        <p className={`font-bold px-10 text-3xl ${card.id === 1 ?  "text-blue-500 " : card.id === 2 ? " text-green-600" : "text-teal-800" }`} >{card.sidename}</p>
                       </div>
                       
                     </div>

@@ -327,6 +327,49 @@ section {
   }
 }
 
+.terms { 
+
+  h2 {
+    @apply text-2xl font-semibold m-4 ;
+  }
+
+  p {
+    @apply text-center text-zinc-400 cursor-default;
+  }
+
+  p {
+    a {
+      @apply text-blue-500 underline ;
+    }
+  }
+
+   
+    ul {
+      li{ 
+        @apply text-zinc-400;
+      }
+      
+    }
+  
+}
+
+
+.share-div {
+  @apply flex flex-row xl:gap-14 gap-6 xl:m-14 m-8 items-center  mx-auto;
+
+  h2 {
+    @apply xl:text-4xl text-xl text-blue-400 font-bold mb-2
+  }
+
+  p {
+    @apply xl:text-2xl my-4 
+  }
+
+  .icon {
+    @apply text-6xl
+  }
+}
+
 /* Hero text slider starts */
 .slide {
   display: inline-block;

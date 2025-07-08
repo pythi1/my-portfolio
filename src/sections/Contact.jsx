@@ -1,43 +1,44 @@
-import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+// import { useRef, useState } from "react";
+// import emailjs from "@emailjs/browser";
 
 import TitleHeader from "../components/TitleHeader";
 import ContactExperience from "../components/models/contact/ContactExperience";
+import Share from "./Share";
 
 const Contact = () => {
-  const formRef = useRef(null);
-  const [loading, setLoading] = useState(false);
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  // const formRef = useRef(null);
+  // const [loading, setLoading] = useState(false);
+  // const [form, setForm] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setForm({ ...form, [name]: value });
+  // };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true); // Show loading state
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setLoading(true); // Show loading state
 
-    try {
-      await emailjs.sendForm(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        formRef.current,
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      );
+  //   try {
+  //     await emailjs.sendForm(
+  //       import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+  //       import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+  //       formRef.current,
+  //       import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+  //     );
 
-      // Reset form and stop loading
-      setForm({ name: "", email: "", message: "" });
-    } catch (error) {
-      console.error("EmailJS Error:", error); // Optional: show toast
-    } finally {
-      setLoading(false); // Always stop loading, even on error
-    }
-  };
+  //     // Reset form and stop loading
+  //     setForm({ name: "", email: "", message: "" });
+  //   } catch (error) {
+  //     console.error("EmailJS Error:", error); // Optional: show toast
+  //   } finally {
+  //     setLoading(false); // Always stop loading, even on error
+  //   }
+  // };
 
   return (
     <section id="contact" className="flex-center section-padding">
@@ -47,8 +48,8 @@ const Contact = () => {
           sub="💬 Have questions or ideas? Let’s talk! 🚀"
         />
         <div className="grid-12-cols mt-16">
-          <div className="xl:col-span-5">
-            <div className="flex-center card-border rounded-xl p-10">
+          <div className="xl:col-span-5 p-8">
+            {/* <div className="flex-center card-border rounded-xl p-10">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
@@ -93,7 +94,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <button type="submit">
+                <button type="submit" onClick={handleSubmit}>
                   <div className="cta-button group">
                     <div className="bg-circle" />
                     <p className="text">
@@ -105,7 +106,10 @@ const Contact = () => {
                   </div>
                 </button>
               </form>
-            </div>
+            </div> */}
+
+            <Share />
+            
           </div>
           <div className="xl:col-span-7 min-h-96">
             <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
