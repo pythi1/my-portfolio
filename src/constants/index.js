@@ -119,7 +119,7 @@ const techStackImgs = [
   },
   {
     name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
+    imgPath: "/images/logos/tailwind-css .png",
   },
   {
     name: "Interactive Developer",
@@ -132,6 +132,14 @@ const techStackImgs = [
    {
     name: "HTML",
     imgPath: "/images/logos/html.png",
+  },
+   {
+    name: "CSS",
+    imgPath: "/images/logos/css.png",
+  },
+   {
+    name: "Tailwind CSS",
+    imgPath: "/images/logos/tailwind-css.png",
   },
 ];
 
