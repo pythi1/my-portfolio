@@ -14,7 +14,7 @@ const Footer = () => {
           <button onClick={()=> setshowterms(!showterms)}>Terms & Conditions</button>
 
           {showterms && (
-            <div className="fixed inset-0 flex justify-center my-auto items-center z-100 overflow-hidden">
+            <div className="fixed inset-0 flex justify-center my-auto items-center z-100 overflow-scroll">
               <div className="bg-black-50 h-fit p-6 flex justify-center items-center rounded-lg w-6xl relative">
                 <Conditions isopen={showterms} onclose={() => setshowterms(!showterms)} />
                
